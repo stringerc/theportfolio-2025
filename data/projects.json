@@ -1,0 +1,31 @@
+[
+  {
+    "id": "courier-quotes-etl",
+    "title": "Courier Logistics Quotes (Excel \u2192 REST ETL)",
+    "subtitle": "Aggregates LTL carrier quotes; ~96% faster (60\u21922 min).",
+    "stack": [
+      "Excel/VBA",
+      "Power Query",
+      "REST/JSON",
+      "Python"
+    ],
+    "demo": "https://stringerc.github.io/courier-quotes-etl/",
+    "repo": "https://github.com/stringerc/courier-quotes-etl",
+    "case": "/projects/courier-quotes-etl/index.html"
+  },
+  {
+    "id": "social-content-pipeline",
+    "title": "Social Content Analyzer, Deployer & Scheduler",
+    "subtitle": "n8n + GCP + OpenAI \u2192 render \u2192 multi\u2011platform autopost with retries.",
+    "stack": [
+      "n8n",
+      "GCP",
+      "OpenAI",
+      "Creatomate",
+      "Drive"
+    ],
+    "demo": "https://stringerc.github.io/social-content-pipeline/",
+    "repo": "https://github.com/stringerc/social-content-pipeline",
+    "case": "/projects/social-content-pipeline/index.html"
+  }
+]

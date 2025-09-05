@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Social Content Pipeline — Case Study</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <main class="wrap case">
+    <header>
+      <h1>Social Media Content Analyzer, Deployer & Scheduler</h1>
+      <p class="meta">n8n + GCP + OpenAI → render → multi‑platform autopost</p>
+      <p>
+        <a class="btn" href="https://stringerc.github.io/social-content-pipeline/" target="_blank" rel="noopener">Live Demo</a>
+        <a class="btn" href="https://github.com/stringerc/social-content-pipeline" target="_blank" rel="noopener">Code</a>
+      </p>
+    </header>
+
+    <h2 class="h">Flow</h2>
+    <ol>
+      <li>Google Sheets trigger → GPT ideation & prompt generation</li>
+      <li>Voice/video via PIAPI → assets to Google Drive</li>
+      <li>Render & merge with Creatomate</li>
+      <li>Autopost with Blotato; per‑platform retries</li>
+    </ol>
+
+    <h2 class="h">Highlights</h2>
+    <ul>
+      <li>Modular n8n workflows</li>
+      <li>Rate‑limit guards + error queues</li>
+      <li>Sanitized demo renders</li>
+    </ul>
+  </main>
+</body>
+</html>

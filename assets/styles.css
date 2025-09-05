@@ -1,0 +1,30 @@
+:root{ --fg:#111; --bg:#fff; --muted:#666; --line:#e6e6e6; --accent:#0a7cff; }
+*{ box-sizing:border-box }
+html,body{ height:100% }
+body{ margin:0; font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial; color:var(--fg); background:var(--bg) }
+.wrap{ max-width:1100px; margin:0 auto; padding:24px 16px }
+.hero{ padding-top:28px }
+.hero h1{ font-size:clamp(28px,4vw,40px); margin:0 0 4px }
+.tag{ color:var(--muted); margin:0 0 6px }
+.meta{ color:var(--muted); margin:0 0 4px }
+.links a{ color:var(--fg); text-decoration:none; border-bottom:1px solid var(--line) }
+.links a:hover{ border-color:var(--fg) }
+.links{ display:flex; gap:8px; align-items:center; margin:6px 0 8px }
+.availability{ background:#f7fbff; border:1px solid #e5f1ff; color:#074a96; padding:8px 12px; border-radius:10px; display:inline-block; margin-top:8px }
+.h{ font-size:20px; margin:28px 0 10px }
+.grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px }
+.card{ border:1px solid var(--line); border-radius:16px; padding:16px; background:#fff; display:flex; flex-direction:column; gap:8px }
+.card h3{ margin:0 0 2px; font-size:18px }
+.badges{ display:flex; flex-wrap:wrap; gap:6px; color:var(--muted); font-size:13px }
+.badges span{ border:1px solid var(--line); padding:2px 8px; border-radius:999px }
+.card .desc{ color:var(--fg) }
+.card .links{ gap:10px }
+a.btn{ display:inline-block; padding:8px 10px; border:1px solid var(--line); border-radius:10px; text-decoration:none; color:#000; background:#fafafa }
+a.btn:hover{ border-color:#bbb }
+.about{ color:#222 }
+.foot{ color:var(--muted); border-top:1px solid var(--line); margin-top:24px }
+.case header{ margin-bottom:14px }
+.case .meta{ margin:2px 0 12px }
+.case .img{ border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+.case img{ width:100%; display:block }
+ol,ul{ padding-left:20px }

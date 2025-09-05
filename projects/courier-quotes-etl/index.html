@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Courier Quotes ETL — Case Study</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <main class="wrap case">
+    <header>
+      <h1>Courier Logistics Quotes (Excel → REST ETL)</h1>
+      <p class="meta">Excel Power Query/VBA + REST integrations</p>
+      <p>
+        <a class="btn" href="https://stringerc.github.io/courier-quotes-etl/" target="_blank" rel="noopener">Live Demo</a>
+        <a class="btn" href="https://github.com/stringerc/courier-quotes-etl" target="_blank" rel="noopener">Code</a>
+        <a class="btn" href="/assets/Christopher_Stringer_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+      </p>
+    </header>
+
+    <h2 class="h">Problem</h2>
+    <p>Manual quote workflow took ~60 minutes; error‑prone and duplicated data entry.</p>
+
+    <h2 class="h">Solution</h2>
+    <p>Excel Power Query + REST calls to multiple LTL carriers; validation, retries, and clear error surfacing for ops users.</p>
+
+    <h2 class="h">Architecture</h2>
+    <ul>
+      <li>Excel PQ invokes carrier endpoints (RL, SAIA, Averitt, AAA Cooper, Central Transport)</li>
+      <li>Python helper for auth signing/pagination</li>
+      <li>Output tab for rates + separate <em>Errors</em> tab</li>
+    </ul>
+
+    <h2 class="h">Results</h2>
+    <ul>
+      <li>~96% cycle‑time reduction (≈60 min → 2 min)</li>
+      <li>Eliminated duplicate entry; fewer pricing errors</li>
+      <li>Ops docs/training shipped</li>
+    </ul>
+
+    <figure class="img"><img src="https://via.placeholder.com/1200x700?text=Workbook+Overview+(sanitized)" alt="Workbook overview (sanitized)"></figure>
+  </main>
+</body>
+</html>
